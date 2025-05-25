@@ -2,7 +2,8 @@ pipeline{
 	agent { label 'jenkins-slave' }
 	tools {
 		jdk 'Java17'
-		maven 'Maven3' 
+		maven 'Maven3'
+                git 'Git_2.39'
 	}
 	stages{
         stage("Cleanup Workspace"){
