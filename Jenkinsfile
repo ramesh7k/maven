@@ -13,7 +13,7 @@ pipeline{
         }
        stage("Checkout from SCM"){
                 steps {
-                    git branch: 'main', credentialsId: 'github', url: 'https://github.com/ramesh7k/maven.git'
+                    git branch: 'master', credentialsId: 'github', url: 'https://github.com/ramesh7k/maven.git'
                 }
         }
       stage("Build Application"){
